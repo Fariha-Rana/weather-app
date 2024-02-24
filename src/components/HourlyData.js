@@ -33,10 +33,8 @@ const HourlyData = ({ hourlyData }) => {
               <td className="border border-gray-300 p-2">
                 {hour?.feelslike_c} °C / {hour?.feelslike_f} °F{" "}
               </td>
-              <td className="border border-gray-300 p-2">
-                  <Image
-                    width={40}
-                    height={40}
+              <td className="flex  justify-center items-center border border-gray-300 p-2">
+                  <img
                     src={`https:${hour?.condition.icon}`}
                     alt={hour?.condition.text}
                     className="w-8 h-auto inline"

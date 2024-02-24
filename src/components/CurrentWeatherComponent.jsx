@@ -25,11 +25,9 @@ const CurrentWeatherComponent = ({ current }) => {
 
       <div className="flex flex-col bg-cyan-950 m-2 border border-spacing-1 rounded-md justify-center items-center text-center  p-2 w-40 h-40">
         <span>{current?.condition.text}
-        <Image
+        <img
             src={`https:${current?.condition?.icon}`}
             alt={current?.condition?.text}
-            width={400}
-            height={400}
             className="w-auto h-auto"
           /></span>
       </div>
